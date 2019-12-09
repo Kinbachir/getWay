@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: fergin-client
+        uri: http://localhost:8081
+        predicates:
+          - Path=/**
+server :
+  port : 8082 
